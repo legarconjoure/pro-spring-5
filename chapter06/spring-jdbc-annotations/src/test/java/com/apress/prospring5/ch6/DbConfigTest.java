@@ -27,9 +27,9 @@ public class DbConfigTest {
 	@Test
 	public void testOne() throws SQLException {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-		//ctx.load("classpath:spring/drivermanager-cfg-01.xml");
+		ctx.load("classpath:spring/drivermanager-cfg-01.xml");
 		//ctx.load("classpath:spring/drivermanager-cfg-02.xml");
-		ctx.load("classpath:spring/datasource-dbcp.xml");
+//		ctx.load("classpath:spring/datasource-dbcp.xml");
 		ctx.refresh();
 
 		DataSource dataSource = ctx.getBean("dataSource", DataSource.class);

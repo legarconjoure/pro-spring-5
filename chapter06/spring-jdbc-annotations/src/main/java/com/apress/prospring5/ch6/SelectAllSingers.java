@@ -10,7 +10,7 @@ import org.springframework.jdbc.object.MappingSqlQuery;
 
 public class SelectAllSingers extends MappingSqlQuery<Singer> {
     private static final String SQL_SELECT_ALL_SINGER =
-        "select id, first_name, last_name, birth_date from singer";
+        "select id, first_name, last_name, birth_date from SINGER";
 
     public SelectAllSingers(DataSource dataSource) {
         super(dataSource, SQL_SELECT_ALL_SINGER);

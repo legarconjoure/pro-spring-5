@@ -9,7 +9,7 @@ import org.springframework.jdbc.object.BatchSqlUpdate;
 
 public class InsertSingerAlbum extends BatchSqlUpdate {
     private static final String SQL_INSERT_SINGER_ALBUM =
-        "insert into album (singer_id, title, release_date) values (:singer_id, :title, :release_date)";
+        "insert into ALBUM (singer_id, title, release_date) values (:singer_id, :title, :release_date)";
 
     private static final int BATCH_SIZE = 10;
 

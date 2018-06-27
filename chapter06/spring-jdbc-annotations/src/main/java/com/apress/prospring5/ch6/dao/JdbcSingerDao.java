@@ -90,8 +90,8 @@ public class JdbcSingerDao implements SingerDao {
 	public List<Singer> findAllWithAlbums() {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(getDataSource());
 		String sql = "SELECT s.id, s.first_name, s.last_name, s.birth_date" +
-				", a.id AS album_id, a.title, a.release_date FROM singer s " +
-				"LEFT JOIN album a ON s.id = a.singer_id";
+				", a.id AS album_id, a.title, a.release_date FROM SINGER s " +
+				"LEFT JOIN ALBUM a ON s.id = a.singer_id";
 		return jdbcTemplate.query(sql, rs -> {
 			Map<Long, Singer> map = new HashMap<>();
 			Singer singer;

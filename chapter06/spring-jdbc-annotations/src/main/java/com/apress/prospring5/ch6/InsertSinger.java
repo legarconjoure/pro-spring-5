@@ -9,7 +9,7 @@ import org.springframework.jdbc.object.SqlUpdate;
 
 public class InsertSinger extends SqlUpdate {
     private static final String SQL_INSERT_SINGER =
-        "insert into singer (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)";
+        "insert into SINGER (first_name, last_name, birth_date) values (:first_name, :last_name, :birth_date)";
 
     public InsertSinger(DataSource dataSource) {
         super(dataSource, SQL_INSERT_SINGER);

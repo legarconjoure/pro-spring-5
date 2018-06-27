@@ -8,7 +8,7 @@ import java.sql.Types;
 
 public class DeleteSinger extends SqlUpdate {
     private static final String SQL_DELETE_SINGERS =
-        "delete from singer where id = :id";
+        "delete from SINGER where id = :id";
 
     public DeleteSinger(DataSource dataSource) {
         super(dataSource, SQL_DELETE_SINGERS);
