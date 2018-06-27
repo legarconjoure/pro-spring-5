@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 //@Award(prize = {"grammy", "platinum disk"})
 //@Award(value={"grammy", "platinum disk"})
 //@Award({"grammy", "platinum disk"})
-@Trophy(name={"grammy", "platinum disk"})
+//@Trophy(name={"grammy", "platinum disk"})
 public class Singer {
 
 	private String lyric = "We found a message in a bottle we were drinking";

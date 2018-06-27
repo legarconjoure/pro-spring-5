@@ -1,7 +1,7 @@
 ext {
 	//spring libs
-	springVersion = '5.0.4.BUILD-SNAPSHOT'
-	bootVersion = '2.0.0.RC1'
+	springVersion = '5.0.7.RELEASE'
+	bootVersion = '2.0.3.RELEASE'
 	springDataVersion = '2.0.2.RELEASE'
 	springAmqpVersion = '2.0.3.BUILD-SNAPSHOT'
 	springSecurityVersion = '5.0.2.BUILD-SNAPSHOT'
@@ -18,7 +18,7 @@ ext {
 	aspectjVersion = '1.8.13'
 	derbyVersion = '10.13.1.1'
 	dbcpVersion = '2.1'
-	mysqlVersion = '6.0.6'
+	mysqlVersion = '8.0.11'
 	h2Version = '1.4.194'
 	jodaVersion = '2.9.9'
 	utVersion = '6.0.1.GA'
