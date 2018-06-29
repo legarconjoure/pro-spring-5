@@ -29,6 +29,7 @@
                     <th>Description</th>
                     <th>View</th>
                     <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
                 <tr th:each="singer : ${singers}">
                     <td th:text="${singer.firstName}">Singer First Name</td>
@@ -36,6 +37,7 @@
                     <td th:text="${singer.description}">Singer Description</td>
                     <td><a th:href="${ '/singers/' + singer.id}">View</a></td>
                     <td><a th:href="${'/singers/edit/' + singer.id}">Edit</a></td>
+                    <td><a th:href="${'/singers/delete/' + singer.id}">Delete</a></td>
                 </tr>
             </table>
         </div>

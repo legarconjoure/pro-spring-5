@@ -56,4 +56,19 @@ public class SingerController {
 		singerService.save(singer);
 		return "redirect:/singers/" + singer.getId();
 	}
+
+	@GetMapping(value = "/delete/{id}")
+	public String createDeleteForm(@PathVariable("id") Long id, Model model) {
+        logger.debug("Delete form created");
+		Singer singer = singerService.findById(id);
+		model.addAttribute("singer", singer);
+		return "delete";
+	}
+
+	@PostMapping(value = "/delete/{id}")
+	public String deleteSinger(@Valid Long id) {
+	    logger.debug("Now in delete");
+		singerService.delete(singerService.findById(id));
+		return "redirect:/singers/";
+	}
 }

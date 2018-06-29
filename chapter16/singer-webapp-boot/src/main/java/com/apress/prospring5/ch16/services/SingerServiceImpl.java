@@ -28,6 +28,11 @@ public class SingerServiceImpl implements SingerService {
 		return singerRepository.save(singer);
 	}
 
+	@Override
+	public void delete(Singer singer) {
+	    singerRepository.delete(singer);
+	}
+
 	@Autowired
 	public void setSingerRepository(SingerRepository singerRepository) {
 		this.singerRepository = singerRepository;
